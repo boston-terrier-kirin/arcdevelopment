@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { ThemeProvider } from '@material-ui/core/styles';
 
+import Home from './pages/Home';
 import Header from './ui/Heaer';
 import theme from './ui/Theme';
 
@@ -11,7 +12,7 @@ function App() {
 			<BrowserRouter>
 				<Header />
 				<Switch>
-					<Route exact path="/" component={() => <div>Home</div>} />
+					<Route exact path="/" component={Home} />
 					<Route
 						exact
 						path="/services"
